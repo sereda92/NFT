@@ -10,6 +10,7 @@ body
     background-color: $color-back
     color: $color-white
     letter-spacing: 1px
+    // background-color: #fff
 
 .bg-grey
     background-color: $color-grey
@@ -19,6 +20,7 @@ body
 .wraper
     max-width: 1440px
     min-height: 100%
+    margin: 0 auto
     display: flex
     flex-direction: column
 
@@ -302,12 +304,14 @@ textPath
 //---------------------------
 
 .trending
+    padding-bottom: 146px    
 
 .trending-body
+    position: relative
     display: grid
     grid-template-columns: 1fr 1fr
     row-gap: 99px
-            
+        
 .trending-main
     width: 557px
     margin-bottom: 96px
@@ -354,3 +358,250 @@ textPath
 
 .trending-item:nth-child(even)
     margin-top: -200px
+    margin-left: auto
+    
+.trending-link
+    position: absolute
+    bottom: 9px
+    right: 20px
+
+.trending-link-wrap
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 184px
+    margin-left: auto
+    gap: 8px
+    a
+        color:$color-pink
+        font-family: $font-paytone
+        font-size: 18px
+        line-height: 20px
+.link-ticket
+    display: inline-block
+    width: 20px
+    height: 20px
+    position: relative
+    &::after,
+    &::before
+        content: ""
+        display: inline-block
+        position: absolute
+        top: 0
+        background-color: #D400B3
+    &::after
+        right: 0
+        width: 15px
+        height: 4px
+    &::before
+        right: -4px
+        width: 4px
+        height: 19px
+    
+        
+//---------------------------------------
+
+.popular-art-header
+    background: linear-gradient(to right,#262627 50%,#0D0D0E 50%)
+
+.art-link-wrap
+    margin-left: 0
+
+.popular-art-title-wrap
+    display: flex
+
+
+
+.popular-art-title-item
+    display: flex
+    flex-direction: column
+    gap: 26px
+    width: 50%
+    padding: 57px 0 10px 80px
+    h2
+        font-family: $font-paytone
+        font-size: $f-s-52
+        line-height: 64px
+    p
+        display: inline-block
+        width: 256px
+
+
+.popular-art
+    background-color: $color-grey
+
+
+.popular-art-body
+    display: flex
+    gap: 16px
+    padding: 160px 0
+
+.popular-art-item
+    display: flex
+    flex-direction: column
+    width: 33.33%
+
+._item-body
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -40px
+    img
+        width: 100px
+        height: 100px
+        margin-bottom: 19px
+    h4
+        font-family: $font-paytone
+        font-size: $f-s-32
+        line-height: 44px
+        margin-bottom: 31px
+    button
+        color: $color-white
+        padding: 7px 38px 13px
+        background-color: $color-pink
+        font-family: $font-paytone
+        font-size: $f-s-18
+        line-height: 20px
+
+
+//-----------------------------------
+
+.backed-block
+    margin-top: 175px
+    margin-bottom: 110px
+    position: relative
+
+.backed-main
+    display: flex
+    flex-direction: column
+    align-items: center
+    // justify-content: center
+
+.backed-block-img
+    position: absolute
+    top: 43%
+    left: 52%
+    transform: translate(-50%, -50%)
+
+.backed-main-title
+    text-align: center
+    width: 591px
+    h2
+        font-family: $font-paytone
+        font-size: $f-s-52
+        line-height: 64px
+        margin-bottom: 18px
+    p
+        color: $color-light-grey
+        font-size: $f-s-20
+        line-height: 32px
+        margin-bottom: 67px
+
+.backed-main-body
+    position: relative
+    width: 912px
+    height: 275px
+    margin-bottom: 270px
+
+.backed-main-body-item
+    position: absolute
+    width: 341px
+    height: 118px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 1px
+    border: 1px solid rgba(229, 229, 229, 0.30)
+    background: rgba(196, 196, 196, 0.20)
+
+.fox-hub
+    top: 0
+    left: 0
+.hexlab
+    top: 0
+    right: 0
+.zootv
+    bottom: 0
+    left: 0
+.nirastate
+    bottom: 0
+    right: 0
+.light-ai
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.backed-form-title
+    width: 600px
+    margin: 0 auto
+    text-align: center
+    h2
+        font-family: $font-paytone
+        font-size: 52px
+        line-height: 64px
+        margin-bottom: 18px
+    p
+        color: $color-light-grey
+        
+        font-size: 20px
+        line-height: 32px
+        margin-bottom: 36px
+    form
+        display: flex
+        input
+            width: 456px
+            height: 50px
+            background: rgba(196, 196, 196, 0.10)
+            border: 1px solid rgba(229, 229, 229, 0.30)
+            padding: 5px 10px
+            color: $color-white
+        button
+            width: 144px
+            height: 50px
+            border-radius: 1px
+            background-color: $color-pink
+            color: $color-white
+            font-size: $f-s-23
+
+.backed-form
+    background-color: $color-grey
+    border-bottom: 5px solid $color-pink
+    padding: 195px 0 95px 0
+    
+
+//-----------------------------------------
+
+.footer
+    margin-bottom: 40px
+.footer__container
+    padding-bottom: 58px
+    border-bottom: 1px solid rgba(229, 229, 229, 0.30)
+.footer-soc
+    display: flex
+    gap: 15px
+    margin-left: auto
+    a
+        padding: 13px
+        width: 46px
+        height: 46px
+        border: 1px solid rgba(229, 229, 229, 0.30)
+        background: rgba(196, 196, 196, 0.20)
+
+.footer-info
+    display: flex
+    justify-content: center
+    margin-top: 41px
+    ul
+        display: flex
+        // gap: 18px
+        li
+            a
+                color: $color-white
+                line-height: 20px
+
+.footer-info-nav
+    li
+        &:not(:last-child)
+            &::after
+                content: '|'
+                margin: 0 18px 
