@@ -13,6 +13,27 @@
         margin-left: 0
     .statistic__block
         padding: 85px 0
+    .trending
+        padding-bottom: 70px
+    .popular-art-title-item
+        padding: 28px 0 10px 0
+        h2
+            margin-left: 15px
+    .popular-art-body 
+        padding: 69px 0
+    .popular-art-title-item h2 
+        font-size: 44px
+    ._item-body h4 
+        font-size: 24px
+    .backed-main-body
+        width: 750px
+    .backed-block 
+        margin-top: 60px
+        margin-bottom: 60px
+
+@media (max-width: 920px)
+    .footer-info-nav li:not(:last-child):after
+        margin: 0 5px
 
 @media (max-width: 767px)
     .back__img
@@ -62,6 +83,7 @@
         padding: 22px 17px 15px 17px
     .trending-body
         grid-template-columns: 1fr
+        row-gap: 50px
     .trending-item:nth-child(even)
         margin-top: 0
         margin-left: 0
@@ -72,6 +94,55 @@
         display: flex
         flex-direction: column
         align-items: center
+        padding-bottom: 80px
+    .trending-main 
+        margin-bottom: 50px
+    .round__wrap 
+        transform: scale(.6)
+    .trending-circular
+        bottom: 15px
+        right: 15px
+    .popular-art-body 
+        flex-direction: column
+        align-items: center
+    .popular-art-item
+        max-width: 50%
+    ._item-body
+        img
+            margin-bottom: 10px
+        h4
+            font-size: 34px
+            margin-bottom: 10px
+        button
+            margin-bottom: 20px
+    .popular-art-title-item
+        h2
+            font-size: 36px
+            text-align: center
+    .popular-art-body 
+        padding: 38px 0
+    .backed-main-body
+        width: 530px
+        margin-bottom: 120px
+        height: 220px
+    .backed-block-img
+        width: 50%
+        top: 40%
+        opacity: .5
+    .backed-main-body-item
+        width: 260px
+        height: 100px
+    .backed-main-title
+        p
+            font-size: 16px
+    .backed-form 
+        padding: 10px 10px 35px 10px
+    .footer-info ul li a 
+        font-size: 12px
+    .footer__container
+        padding-bottom: 20px
+    .footer-info
+        margin-top: 20px
 
 
 @media (max-width: 620px)
@@ -93,7 +164,50 @@
     .sell-nft-item 
         width: 100%
         min-height: 220px
+    .popular-art-item 
+        max-width: 80%
+    .popular-art-title-wrap
+        flex-direction: column-reverse
+    .popular-art-title-item 
+        width: 100%
+    .popular-art-header
+        background: $color-back
+    ._art-title-one
+        display: none
+    ._art-title-two
+        display: flex
+    .footer-info-nav
+        flex-direction: column
+    .footer-info
+        justify-content: start
 
+@media (max-width: 540px)
+    .popular-art-title-item
+        padding: 17px 0 10px 0
+    .backed-block-img 
+        display: none
+    .backed-main-body-item
+        position: static
+        width: 100%
+    .light-ai 
+        transform: translate(0, 0)
+    .backed-main-body 
+        width: 100%
+        margin-bottom: 20px
+        height: 100%
+    .backed-main-title
+        h2
+            font-size: 36px
+        p
+            margin-bottom: 30px
+    .backed-block
+        margin-top: 17px
+    .backed-form-title
+        h2
+            font-size: 36px
+
+
+    
 
 @media (max-width: 480px)
     .title__page
@@ -110,6 +224,11 @@
         gap: 30px
     .video__page
         padding: 10px 0
+    .round__wrap 
+        transform: scale(.6)
+    .trending-circular
+        bottom: -5px
+        right: -5px
 
 
 

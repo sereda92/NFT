@@ -12,6 +12,21 @@
 
 <body>
     <div class="wraper">
+        <div class="burger-body" id="burger-body">
+            <nav class="burger-nav">
+                <ul class="burger-nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Marketplace</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Artists</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="__container">
                 <div class="header__container">
@@ -20,17 +35,20 @@
                         <ul class="nav__menu">
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Marketplace</a>
+                                <a href="#" class="nav__link-hover">Marketplace</a>
                             </li>
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Artists</a>
+                                <a href="#" class="nav__link-hover">Artists</a>
                             </li>
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Contact</a>
+                                <a href="#" class="nav__link-hover">Contact</a>
                             </li>
                         </ul>
                     </nav>
                     <a href="#" class="header__btn">Buy Template</a>
-                    <div class="burger-menu">
+                    <div class="burger-menu" id="burgerBtn">
                         <span class="burger-line"></span>
                     </div>
                 </div>
@@ -65,7 +83,10 @@
                 <div class="video__page">
                     <div class="__container">
                         <a href="#" class="video__link">
-                            Watch video
+                            <div>
+                                <span class="span-hover">Watch video</span>
+                                <span>Watch video</span>
+                            </div>
                             <img src="/img/play_icon.svg" alt="play_icon">
                         </a>
                     </div>
@@ -341,7 +362,7 @@
                 <div class="popular-art-header">
                     <div class="__container">
                         <div class="popular-art-title-wrap">
-                            <div class="popular-art-title-item">
+                            <div class="popular-art-title-item _art-title-one">
                                 <div class="trending-link-wrap art-link-wrap">
                                     <span class="link-ticket"></span>
                                     <a href="#">View all artists</a>
@@ -382,10 +403,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="popular-art-title-item _art-title-two">
+                            <div class="trending-link-wrap art-link-wrap">
+                                <span class="link-ticket"></span>
+                                <a href="#">View all artists</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, tempor consectetur dolore.</p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- <section>
+            <section>
                 <div class="__container">
                     <div class="backed-block">
                         <img class="backed-block-img" src="/img/backed/hand.png" alt="hand">
@@ -424,9 +452,9 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
         </main>
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="__container">
                 <div class="header__container footer__container">
                     <img src="/img/logo.png" alt="logo" class="header__logo">
@@ -434,28 +462,40 @@
                         <ul class="nav__menu">
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Marketplace</a>
+                                <a href="#" class="nav__link-hover">Marketplace</a>
                             </li>
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Artists</a>
+                                <a href="#" class="nav__link-hover">Artists</a>
                             </li>
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Contact</a>
+                                <a href="#" class="nav__link-hover">Contact</a>
                             </li>
                         </ul>
                     </nav>
                     <ul class="footer-soc">
-                        <li>
-                            <a href="#">
+                        <li class="footer-soc-item">
+                            <a href="#" class="footer-soc-link">
+                                <img src="/img/fot-soc/linked-in.svg" alt="">
+                            </a>
+                            <a href="#" class="footer-soc-link _link-color">
                                 <img src="/img/fot-soc/linked-in.svg" alt="">
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="footer-soc-item">
+                            <a href="#" class="footer-soc-link">
+                                <img src="/img/fot-soc/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="footer-soc-link _link-color">
                                 <img src="/img/fot-soc/facebook.svg" alt="">
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="footer-soc-item">
+                            <a href="#" class="footer-soc-link">
+                                <img src="/img/fot-soc/twitter.svg" alt="">
+                            </a>
+                            <a href="#" class="footer-soc-link _link-color">
                                 <img src="/img/fot-soc/twitter.svg" alt="">
                             </a>
                         </li>
@@ -481,7 +521,7 @@
                     </ul>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 
     </div>
 

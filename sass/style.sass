@@ -11,7 +11,6 @@ body
     background-color: $color-back
     color: $color-white
     letter-spacing: 1px
-    // background-color: #fff
 
 .bg-grey
     background-color: $color-grey
@@ -85,8 +84,6 @@ textPath
 .circular
     width: 68%
 
-.first__section
-    // height: 100vh
 
 .circular
     svg
@@ -124,9 +121,21 @@ textPath
     margin-left: 48px
 
 .nav__item
+    display: flex
+    flex-direction: column
+    height: 20px
+    overflow: hidden
+    transition: all .4s ease
+    &:hover
+        .nav__link
+            margin-top: -18px
+        
+.nav__link-hover
+    color: $color-pink
 
 .nav__link
     line-height: 20px
+    transition: all .4s ease
 
 .nav__link,
 .header__btn
@@ -141,6 +150,11 @@ textPath
     justify-content: center
     border-radius: 1px
     margin-left: auto
+    transition: all .4s ease
+    &:hover
+        opacity: .9
+        transform: scale(.99)
+        border-radius: 10px
 
 .title__page
     max-width: 658px
@@ -167,11 +181,23 @@ textPath
     color: $color-white
     font-family: $font-paytone
     font-size: 32px
-    display: inline-flex
-    align-items: center
+    display: flex
     gap: 13px
     line-height: 44px
     margin-left: 100px
+    div
+        display: flex
+        flex-direction: column
+        height: 44px 
+        overflow: hidden
+        span
+            transition: all 0.3s ease
+        &:hover
+            .span-hover
+                margin-top: -44px
+        span
+            &:nth-child(2)
+                color: $color-pink
     img
         display: inline-block
         padding: 14px
@@ -276,6 +302,7 @@ textPath
     background: $color-grey
     padding: 47px 17px 15px 17px
     position: relative
+    transition: all .4s ease
     h4
         font-family: $font-paytone
         font-size: 23px
@@ -295,6 +322,8 @@ textPath
         height: 1px
         background-color: $color-line
         transform: rotate(45deg)
+    &:hover
+        background: $color-line
 
 
 
@@ -352,8 +381,13 @@ textPath
 .item-body
     position: relative
     max-width: 100%
+    overflow: hidden
+    cursor: pointer
     img
         max-width: 100%
+        transition: all .4s ease
+        &:hover
+            transform: scale(1.1)
 
 
 .trending-circular
@@ -384,6 +418,9 @@ textPath
         font-family: $font-paytone
         font-size: 18px
         line-height: 20px
+        transition: all .4s ease
+        &:hover
+            color: #fff
 .link-ticket
     display: inline-block
     width: 20px
@@ -404,6 +441,7 @@ textPath
         right: -4px
         width: 4px
         height: 19px
+
     
         
 //---------------------------------------
@@ -446,7 +484,9 @@ textPath
 .popular-art-item
     display: flex
     flex-direction: column
-    width: 33.33%
+    max-width: 33.33%
+    img
+        max-width: 100%
 
 ._item-body
     display: flex
@@ -469,7 +509,14 @@ textPath
         font-family: $font-paytone
         font-size: $f-s-18
         line-height: 20px
+        transition: all .4s ease
+        &:hover
+            opacity: .9
+            transform: scale(.99)
+            border-radius: 10px
 
+._art-title-two
+    display: none
 
 //-----------------------------------
 
@@ -482,7 +529,6 @@ textPath
     display: flex
     flex-direction: column
     align-items: center
-    // justify-content: center
 
 .backed-block-img
     position: absolute
@@ -492,7 +538,7 @@ textPath
 
 .backed-main-title
     text-align: center
-    width: 591px
+    max-width: 591px
     h2
         font-family: $font-paytone
         font-size: $f-s-52
@@ -520,7 +566,15 @@ textPath
     border-radius: 1px
     border: 1px solid rgba(229, 229, 229, 0.30)
     background: rgba(196, 196, 196, 0.20)
+    transition: all .4s ease
+    &:hover
+        background: $color-line
 
+.backed-form-button
+    transition: all .4s ease
+    &:hover
+        opacity: .9
+        border-radius: 0 10px 10px 0
 .fox-hub
     top: 0
     left: 0
@@ -539,7 +593,7 @@ textPath
     transform: translate(-50%, -50%)
 
 .backed-form-title
-    width: 600px
+    max-width: 600px
     margin: 0 auto
     text-align: center
     h2
@@ -587,12 +641,12 @@ textPath
     display: flex
     gap: 15px
     margin-left: auto
-    a
-        padding: 13px
-        width: 46px
-        height: 46px
-        border: 1px solid rgba(229, 229, 229, 0.30)
-        background: rgba(196, 196, 196, 0.20)
+.footer-soc-link
+    padding: 13px
+    width: 46px
+    height: 46px
+    border: 1px solid rgba(229, 229, 229, 0.30)
+    background: rgba(196, 196, 196, 0.20)
 
 .footer-info
     display: flex
@@ -612,7 +666,39 @@ textPath
             &::after
                 content: '|'
                 margin: 0 18px 
+.footer-soc-link
+    transition: all .4s ease
+.footer-soc-item
+    display: flex
+    flex-direction: column
+    height: 46px
+    overflow: hidden
+    &:hover
+        a
+            &:nth-child(1)
+                margin-top: -46px
+._link-color
+    background-color: #2264b5
 
+
+.footer-info-link
+    position: relative
+    transition: all .4s ease
+    &::before
+        content: ''
+        display: inline-block
+        position: absolute
+        bottom: 0
+        left: 50%
+        width: 0%
+        height: 1px
+        background-color: $color-pink
+        transition: all .4s ease
+    &:hover
+        color: $color-pink
+        &::before
+            width: 100%
+            left: 0
 
 
 
