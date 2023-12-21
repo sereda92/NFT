@@ -5,8 +5,13 @@
     height: 30px
     cursor: pointer
 
-    
-
+.burger-line-active
+    transform: rotate(15deg)
+    transition: all .4s ease
+    &::after
+        top: -9px
+        transform: rotate(330deg)
+        
 .burger-line
     display: inline-block
     width: 100%
